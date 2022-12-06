@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import productReducer from "../features/productSlice"; // Penamaan productReducer itu bebas bisa diganti menggunakan nama yang lain
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    product: productReducer,
   },
 });
